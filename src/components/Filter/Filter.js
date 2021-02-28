@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Filter = ({ filter, onChange }) => {
   return (
     <input
@@ -8,6 +10,11 @@ const Filter = ({ filter, onChange }) => {
       placeholder="Enter name for search"
     />
   );
+};
+
+Filter.propTypes = {
+  filter: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 export default Filter;
